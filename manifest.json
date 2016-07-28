@@ -1,19 +1,25 @@
 {
   "manifest_version": 2,
 
-  "name": "PokeNope",
-  "description": "Removes Pokemon related stuff from your Facebook News Feed",
+  "name": "Fridge 2k16",
+  "description": "Removes election related stuff from your Facebook News Feed",
   "version": "1.0",
+  "permissions": [
+    "webRequest",
+  "*://*.facebook.com/*"
+    ],
+"background": {
+    "scripts":["bg.js"]
+},
   "content_scripts": [
   {
     "matches": ["*://*.facebook.com/*"],
-    "js": ["jquery-3.1.0.min.js", "blacklist.js", "pokenope.js"],
+    "js": ["jquery-1.4.js", "jquery.livequery.min.js","blacklist.js", "fridge.js"],
     "run_at": "document_end"
   }],
 
   "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "pokenope.html",
-    "default_title": "PokeNope!"
+    "default_popup": "fridge.html",
+    "default_title": "Fridge 2k16"
   }
 }

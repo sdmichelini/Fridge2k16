@@ -1,8 +1,11 @@
 var blacklist = [
-	"Pokémon",
-	"Pokemon", 
-	"pokemon", 
-	"poke", 
-	"Pokemon Go", 
-	"Pokmon", 
-	"pokmon"]
+	"Trump",
+	"trump",
+	"Clinton",
+	"clinton",
+	"Obama",
+	" RNC ",
+	"Presidential",
+	"presidential",
+	"politics",
+]
